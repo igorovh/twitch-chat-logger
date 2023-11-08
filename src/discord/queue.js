@@ -20,7 +20,7 @@ setInterval(() => {
         const sentMessagesIds = [];
         for(let i = 0; i < queue.length; i++) {
             const message = queue[i];
-            const formattedMessage = `${new Date(message.date).toLocaleString()} | ${message.username}: ${message.content}`
+            const formattedMessage = `${new Date(message.date).toLocaleString('pl-PL')} | ${message.username}: ${message.content}`
             if(builder.length + formattedMessage.length <= CHARACTERS_MAX) {
                 builder += formattedMessage + '\n';
                 sentMessagesIds.push(message.id);
