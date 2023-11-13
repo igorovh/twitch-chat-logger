@@ -31,7 +31,6 @@ setInterval(() => {
         if(builder.length > 0) {
             const webhook = channels[channel];
             webhook.send(`\`\`\`${builder}\`\`\``);
-            console.info(`Sent ${sentMessagesIds.length} messages to ${channel} logger.`);
         }
     })
 }, 2000);
