@@ -35,8 +35,7 @@ setInterval(() => {
 
 		if (builder.length > 0) {
 			const webhook = channels[channel];
-			//webhook.send(`\`\`\`${builder}\`\`\``);
-			console.log(builder);
+			webhook.send(`\`\`\`${builder}\`\`\``);
 		}
 	});
 }, 2000);
